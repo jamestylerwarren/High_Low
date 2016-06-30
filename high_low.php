@@ -11,7 +11,7 @@ do {
 
 	if ($num == $guess){
 		echo 'Good Guess!' . PHP_EOL;
-		
+
 	} elseif ($num > $guess) {
 		echo 'Higher' . PHP_EOL;
 	} else echo 'Lower' . PHP_EOL;
