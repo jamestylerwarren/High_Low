@@ -1,7 +1,7 @@
 <?php
 
 //random number generator
-$num = (rand(1,100));
+$num = (mt_rand(1,100));
 
 
 
@@ -11,6 +11,7 @@ do {
 
 	if ($num == $guess){
 		echo 'Good Guess!' . PHP_EOL;
+		
 	} elseif ($num > $guess) {
 		echo 'Higher' . PHP_EOL;
 	} else echo 'Lower' . PHP_EOL;
