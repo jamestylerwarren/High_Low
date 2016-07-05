@@ -12,7 +12,7 @@ if ($argc === 3 && is_numeric($argv[1]) && is_numeric($argv[2])) {
 	do {
 		fwrite(STDOUT, 'Guess? ') . PHP_EOL;
 		$guess = trim(fgets(STDIN));
-		$guesses += 1;
+		$guesses++;
 		if ($num == $guess){
 			echo "Good Guess! You guessed $guesses times." . PHP_EOL;
 		} elseif ($num > $guess) {
