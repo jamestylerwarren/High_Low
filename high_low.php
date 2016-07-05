@@ -1,7 +1,7 @@
 <?php
 
 //random number generator
-$num = (mt_rand(1,100));
+$num = mt_rand(1,100);
 $guesses = 0;
 
 
