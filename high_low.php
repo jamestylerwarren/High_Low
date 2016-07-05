@@ -7,7 +7,7 @@ $guesses = 0;
 
 do {
 	fwrite(STDOUT, 'Guess? ') . PHP_EOL;
-	$guess = fgets(STDIN);
+	$guess = trim(fgets(STDIN));
 	$guesses += 1;
 	if ($num == $guess){
 		echo "Good Guess! You guessed $guesses times." . PHP_EOL;
